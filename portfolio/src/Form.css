@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  background-color: rgb(82, 163, 163);
+  font-size: 1.25rem; /* 20px converted to rem */
+  padding-top: 0.625rem; /* 10px converted to rem */
+  padding-bottom: 3.125rem; /* 50px converted to rem */
+}
+
+.form-container h1 {
+  font-size: 1.875rem; /* 30px converted to rem */
+}
+
+.form-container div {
+  text-align: center;
+  margin: 3.125rem; /* 50px converted to rem */
+  margin-top: 3.125rem; /* 50px converted to rem */
+}
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  background-color: antiquewhite;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 30rem; /* 400px converted to rem */
+  margin: 0 auto;
+  padding: 3rem 0;
+  box-shadow: 0 0.25rem 0.5rem; /* 4px converted to rem, 8px converted to rem */
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.9375rem; /* 15px converted to rem */
+  margin-bottom: 1rem; /* 16px converted to rem */
+  border: 0.0625rem solid #ccc; /* 1px converted to rem */
+  border-radius: 0.25rem; /* 4px converted to rem */
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: rgb(82, 163, 163);
+  height: 2.5rem; /* 40px converted to rem */
+  width: 9.375rem; /* 150px converted to rem */
+  margin-top: 0.9375rem; /* 15px converted to rem */
+  color: black;
+  font-size: 1.25rem; /* 20px converted to rem */
+  font-weight: bold;
+  transition: transform 0.3s ease;
+  margin-left: 1.09375rem; /* 17.5px converted to rem */
+  margin-top: -0.625rem; /* -10px converted to rem */
+}
+
+button:hover {
+  transform: translate(0.3125rem); /* 5px converted to rem */
+}
+
+@media (max-width: 30rem) { /* 480px converted to rem */
+  .contact-form button {
+      margin: 0;
+  }
+}

@@ -1,0 +1,46 @@
+.case-study {
+    background-color: rgb(239, 252, 252);
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 0rem 10rem 10rem;
+}
+
+.case-study h1 {
+    margin-bottom: 2rem ;
+    margin-top: 5rem;
+    margin-left: 10rem;
+}
+.skills-section h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+ .case-study p  {
+    max-width: 70ch;
+    margin-bottom: 1rem;
+}
+.case-study img {
+    margin: 2rem 0 2rem 2rem;
+    width: 70%;
+    box-shadow: 0 4px 8px;
+}
+.View-Project-section{
+    margin-top: 5rem;
+}
+.View-Project-section a {
+    margin:0 2rem;
+}
+.back{
+    background-color: rgb(205, 205, 206);
+}
+
+@media (max-width:900px) {
+    .case-study {
+        padding: 2rem;
+    }
+    .case-study h1 {
+        margin-left: 0px;
+        align-self: center;    
+    }
+    
+}
