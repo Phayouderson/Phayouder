@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Phayouderson/static/css/main.2bd5e47b.css",
+    "main.js": "/Phayouderson/static/js/main.c6e1f040.js",
+    "static/media/PPhoto.png": "/Phayouderson/static/media/PPhoto.181eb7eadbaa1aac6c2a.png",
+    "static/media/Littlelemonphoto.png": "/Phayouderson/static/media/Littlelemonphoto.a903b64efb1e3d7904b7.png",
+    "static/media/UpworkIcon.png": "/Phayouderson/static/media/UpworkIcon.9a53ad7e193b319e8101.png",
+    "static/media/GithubIcon.png": "/Phayouderson/static/media/GithubIcon.5994b25b696bbc93b5d8.png",
+    "index.html": "/Phayouderson/index.html",
+    "main.2bd5e47b.css.map": "/Phayouderson/static/css/main.2bd5e47b.css.map",
+    "main.c6e1f040.js.map": "/Phayouderson/static/js/main.c6e1f040.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2bd5e47b.css",
+    "static/js/main.c6e1f040.js"
+  ]
+}
