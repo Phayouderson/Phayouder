@@ -1,12 +1,11 @@
 .projects-container {
     padding: 50px 50px;
-    background-color: rgb(239, 252, 252);
+    /* background-color: rgb(239, 252, 252); */
 
 
 }
 .project {
     text-align: center;
-    font-size: 1.25rem;
     margin-bottom: 5rem;
 
 }

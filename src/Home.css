@@ -1,15 +1,37 @@
 .home {
 text-align: center;
-background-color: rgb(82, 163, 163);
-padding-top: 9.375rem;
+ /* background-color: rgb(82, 163, 163);  */
+padding-top: 6rem;
 padding-bottom: 6.25rem;
+/* border:solid 1rem ; */
+
 }
 
 .home h1 {
-    font-size: 3.13rem;
+    background: linear-gradient(90deg, #1aecff, #ff1a62);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 8rem;
 }
+.home h1::after {
+    content: attr(data-text); 
+    display: block;
+    background: linear-gradient(90deg, #1aecff, #ff1a62);
+    -webkit-background-clip: text;
+    color: transparent;
+    visibility: hidden;
+  }
+.theLine{
+    width: 100%;
+    height: 0.1rem;
+    margin-top: 1rem;
+    background: linear-gradient(90deg, #1aecff, #ff1a62);
+  
+  }
 .home p {
     font-size: 1.25rem;
+    padding: 1rem;
+
 }
 .home-button {
     background-color: white;
@@ -28,7 +50,6 @@ button:hover {
     @media  (max-width: 900px) {
         .home {
             width: 100%;
-            
 
         }
         .home h1 {
@@ -36,9 +57,11 @@ button:hover {
             font-size: 3rem;
             margin-bottom:1rem ;
         }
-        .home p {
+        /* .home p {
             padding-left: 1rem;
             padding-right: 1rem;
             font-size: 1rem;
-        }
+        } */
     }
+
+    

@@ -4,7 +4,7 @@
 }
 
 .form-container {
-  background-color: rgb(82, 163, 163);
+  /* background-color: rgb(82, 163, 163); */
   font-size: 1.25rem; /* 20px converted to rem */
   padding-top: 0.625rem; /* 10px converted to rem */
   padding-bottom: 3.125rem; /* 50px converted to rem */
