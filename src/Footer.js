@@ -4,6 +4,10 @@ import FacebookIcon from './FacebookIcon.png'
 import LinkedinIcon from './LinkedinIcon.png'
 import UpworkIcon from './UpworkIcon.png'
 import GithubIcon from './GithubIcon.png'
+import { FaFacebookF, FaGithub } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa";
+import { BiLogoUpwork } from "react-icons/bi";
+
 const footer = () =>{
     return (
     <footer>
@@ -19,10 +23,25 @@ const footer = () =>{
             </div>
             <div className="social-media-main-container">
                 <h3>
-                Social
+                Social Media
                 </h3>
-
                 <div className="social-media-container">
+                    <a href="https://www.facebook.com/fayou.borgella" target="_blank" rel="noopener noreferrer">
+                    <FaFacebookF />
+
+                    </a>
+                    <a href="https://www.linkedin.com/in/phayouderson/" target="_blank" rel="noopener noreferrer">
+                    <FaLinkedinIn />
+                    </a>
+                    <a href="https://github.com/Phayouderson" target="_blank" rel="noopener noreferrer">
+                         <FaGithub/>
+                    </a>
+                    <a href="https://www.upwork.com/freelancers/~0190a886e9fe15b87e" target="_blank" rel="noopener noreferrer">
+                        <BiLogoUpwork />
+                    </a>
+                </div>
+
+                {/* <div className="social-media-container">
                     <a href="https://www.facebook.com/fayou.borgella" target="_blank" rel="noopener noreferrer">
                         <img src={FacebookIcon} alt="Facebook" />
                     </a>
@@ -35,7 +54,7 @@ const footer = () =>{
                     <a href="https://www.upwork.com/freelancers/~0190a886e9fe15b87e" target="_blank" rel="noopener noreferrer">
                         <img src={UpworkIcon} alt="Upwork" />
                     </a>
-                </div>
+                </div> */}
             </div>
         </section>
         <section >
