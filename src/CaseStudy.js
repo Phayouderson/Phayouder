@@ -1,55 +1,29 @@
+
 import React from 'react';
-import Littlelemonphoto from './Littlelemonphoto.png'
-import './CaseStudy.css'
+import Project from './Project';
+import Littlelemonphoto from './Littlelemonphoto.png';
 
 function CaseStudy() {
+  const projects = [
+    {
+      title: "Little Lemon Restaurant",
+      description: "As a capstone project for the Meta Front-End Developer Professional Certificate program, I embraced the challenge of transforming the “Little Lemon Restaurant” website. This fictional client required a digital revamp to enhance their online presence and streamline customer engagement.",
+      image: Littlelemonphoto,
+      skills: ["HTML5", "CSS", "JavaScript", "React", "Responsive Design"],
+      projectLink: "https://phayouderson.github.io/final-project/",
+      challenge: "The existing website was antiquated, non-responsive, and offered a subpar user experience that negatively impacted customer reservations.",
+      Objective: "My primary objective was to revitalize “Little Lemon Restaurant” with a contemporary and inviting online interface. The goal was to craft a user-centric website that not only draws in more patrons but also simplifies the reservation process.",
+      Approach: "I spearheaded the website’s redesign, infusing it with a modern aesthetic and ensuring full responsiveness for optimal user experience across all devices. A key feature I introduced was an intuitive reservation system to facilitate customer bookings. Moreover, I enhanced the website’s search engine optimization (SEO) to bolster its online discoverability.",
+      Outcome: "The project culminated in a sleek, user-friendly website that stands as a testament to the knowledge and skills I’ve honed through the certificate program. I eagerly anticipate leveraging this experience in real-world front-end development scenarios."
+
+    },
+  ];
+
   return (
-    <div className="case-study">
-      <h1>Little Lemon Restaurant</h1>
-      <div>
-        <p>
-          As part of the Meta Front-End Developer Professional Certificate program, I undertook the challenge of redesigning the website for "Little Lemon Restaurant," an imaginary establishment, to boost its online presence and customer engagement.
-        </p>
-        <img src={Littlelemonphoto} alt='Little lemon' className="case-study-image"></img>
-      </div>
-      <div>
-        <h2>Project Overview:</h2>
-        <p>Little Lemon Restaurant (Fictional Client) needed a modern website makeover. Their existing site was outdated, lacked responsiveness, and hindered user experience, hampering customer reservations.</p>
-        <p>As a Front-End Developer my primary goal for this project was to give "Little Lemon Restaurant" a fresh online presence. We wanted to create a user-friendly website that would attract more customers and make reservations hassle-free.</p>
-        <p>To achieve this, i focused on redesigning the website with a modern and appealing look. i made it fully responsive to provide an excellent user experience on all devices. We also implemented an easy-to-use reservation system to enhance customer convenience. Additionally, i worked on improving the site's SEO to increase online visibility.</p>
-        <p>I look forward to applying the knowledge gained from this project to real-world opportunities in front-end development.</p>
-      </div>
-      <div className="skills-section">
-          <h2>
-          Tools Used
-          </h2>
-          <div className="skills">
-            <p>
-              HTML5
-            </p>
-            <p>
-              CSS
-            </p>
-            <p>
-              JavaScript
-            </p>
-            <p>
-              React
-            </p>
-            <p>Responsive Design</p>
-          </div>
-      </div>
-      <div className="View-Project-section">
-        <h2>Link to View Project</h2>
-          <div>
-            <a href="https://phayouderson.github.io/final-project/" target="_blank" rel="noopener noreferrer">
-              <button > Project Link</button>
-              </a>
-              <a href="/" >
-              <button className='back'>Back</button>
-              </a>
-          </div>
-        </div>
+    <div>
+      {projects.map((project, index) => (
+        <Project key={index} {...project} />
+      ))}
     </div>
   );
 }

@@ -4,6 +4,7 @@ import Form from "./Form";
 import Navbar from "./Navbar";
 import About from "./About";
 import Projects from "./Projects";
+import CaseStudy from './CaseStudyPage'
 import Home from "./Home";
 
 const app = ()=>{
@@ -16,6 +17,7 @@ const app = ()=>{
         <Projects/>
         <Form/>
         <Footer/>
+        <CaseStudy/>
       </div>
     </>
   )

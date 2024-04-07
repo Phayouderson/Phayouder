@@ -1,7 +1,4 @@
 import React from "react";
-import FacebookIcon from './FacebookIcon.png'
-import LinkedinIcon from './LinkedinIcon.png'
-import UpworkIcon from './UpworkIcon.png'
 import { FaFacebookF, FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { BiLogoUpwork } from "react-icons/bi";
@@ -10,15 +7,11 @@ import { BiLogoUpwork } from "react-icons/bi";
 
 import './Home.css'
 const Home = () => {
-    // const style = {
-    //       borderStyle: 'solid',
-    //       borderWidth: '4px',
-    //       borderImage: 'linear-gradient(90deg, #1aecff, #ff1a62) 1'
-    //     };
+    
     return (
         <div id="home" className="home">
             <h1>
-                Hi, i'm Phayouderson
+                Hi, i'm<br/> Phayouderson
             </h1>
             <p>A Full Stack Developer who builds things for the web. 
             </p>

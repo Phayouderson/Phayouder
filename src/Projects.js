@@ -1,6 +1,8 @@
-import React from "react";
 import "./Projects.css";
 import Littlelemonphoto from "./Littlelemonphoto.png";
+import { useEffect } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const projectsData = [
   {
@@ -11,46 +13,80 @@ const projectsData = [
     liveLink: "url",
     GitHubRepo: "GitHub Repo",
   },
+  {
+    title: "Little Lemon",
+    description:"I created the Little Lemon website from start to finish, showcasing my passion for web development and design. As the sole developer, I designed an intuitive and visually appealing interface that embodies the essence of Little Lemon's brand.",
+    image: Littlelemonphoto,
+    caseStudyLink: "CaseStudyPage",
+    liveLink: "url",
+    GitHubRepo: "GitHub Repo",
+  },
+  {
+    title: "Little Lemon",
+    description:"I created the Little Lemon website from start to finish, showcasing my passion for web development and design. As the sole developer, I designed an intuitive and visually appealing interface that embodies the essence of Little Lemon's brand.",
+    image: Littlelemonphoto,
+    caseStudyLink: "CaseStudyPage",
+    liveLink: "url",
+    GitHubRepo: "GitHub Repo",
+  },
+  {
+    title: "Little Lemon",
+    description:"I created the Little Lemon website from start to finish, showcasing my passion for web development and design. As the sole developer, I designed an intuitive and visually appealing interface that embodies the essence of Little Lemon's brand.",
+    image: Littlelemonphoto,
+    caseStudyLink: "CaseStudyPage",
+    liveLink: "url",
+    GitHubRepo: "GitHub Repo",
+  },
+  {
+    title: "Little Lemon",
+    description:"I created the Little Lemon website from start to finish, showcasing my passion for web development and design. As the sole developer, I designed an intuitive and visually appealing interface that embodies the essence of Little Lemon's brand.",
+    image: Littlelemonphoto,
+    caseStudyLink: "CaseStudyPage",
+    liveLink: "url",
+    GitHubRepo: "GitHub Repo",
+  },
+  
 ];
+gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
+  useEffect(() => {
+    gsap.from(".projec", {duration: 2,
+      opacity:1,
+      y:150,
+      stagger:0.25,
+      scrollTrigger: {
+        trigger: ".projec",
+        start: "top bottom", // Animation starts when the top of ".project-item" hits the bottom of the viewport
+        // toggleActions: "play none none none"
+      }
+         });
+  }, []);
   return (
-    <div id="projects" className="projects-container">
-      <section className="project">
-        <h1>Projects</h1>
-        <p>
-        Here you will find some of the personal and clients projects that 
-        I've created, with each project featuring its own details including 
-        live links and GitHub repositories.
-        </p>
-      </section>
+    <div id="projects" className="projects-container ">
+      <div className="project">
+        <h1>Projects <br/><scan className="textline"></scan></h1>
+      </div>
+      <div className="project-grid">
       {projectsData.map((project, index) => (
         <ProjectItem key={index} project={project} />
       ))}
+      </div>
     </div>
   );
 };
 
 const ProjectItem = ({ project }) => {
   return (
-    <section className="project-item">
-      <div className="project-item-image">
+    <section className="project-item ">
+    <div className="project-cart">
         <img src={project.image} alt={project.title} />
-      </div>
-      <div className="project-item-content">
-        <h3>{project.title}</h3>
         <p>{project.description}</p>
-      </div>
-      <div>
-          <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-            <button>Live Link</button>
-          </a>
-          <a href={project.githubRepo} target="_blank" rel="noopener noreferrer">
-            <button>GitHub Repo</button>
-          </a>
         </div>
+        
     </section>
   );
 };
 
 export default Projects;
+

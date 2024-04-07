@@ -1,9 +1,5 @@
 import React from "react";
 import './Footer.css'
-import FacebookIcon from './FacebookIcon.png'
-import LinkedinIcon from './LinkedinIcon.png'
-import UpworkIcon from './UpworkIcon.png'
-import GithubIcon from './GithubIcon.png'
 import { FaFacebookF, FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { BiLogoUpwork } from "react-icons/bi";
