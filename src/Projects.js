@@ -1,8 +1,9 @@
 import "./Projects.css";
 import Littlelemonphoto from "./Littlelemonphoto.png";
-import { useEffect } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import React, { useEffect, useRef } from 'react';
+import "@animxyz/core";
+import { XyzTransition} from "@animxyz/react";
+
 
 const projectsData = [
   {
@@ -45,48 +46,54 @@ const projectsData = [
     liveLink: "url",
     GitHubRepo: "GitHub Repo",
   },
-  
 ];
-gsap.registerPlugin(ScrollTrigger);
-
 const Projects = () => {
-  useEffect(() => {
-    gsap.from(".projec", {duration: 2,
-      opacity:1,
-      y:150,
-      stagger:0.25,
-      scrollTrigger: {
-        trigger: ".projec",
-        start: "top bottom", // Animation starts when the top of ".project-item" hits the bottom of the viewport
-        // toggleActions: "play none none none"
-      }
-         });
-  }, []);
   return (
-    <div id="projects" className="projects-container ">
+    <div id="projects" className="projects-container">
       <div className="project">
-        <h1>Projects <br/><scan className="textline"></scan></h1>
+        <h1>Projects <br/><span className="textline"></span></h1>
       </div>
       <div className="project-grid">
-      {projectsData.map((project, index) => (
-        <ProjectItem key={index} project={project} />
-      ))}
+        {projectsData.map((project, index) => (
+          <ProjectItem key={index} project={project} />
+        ))}
       </div>
     </div>
   );
 };
 
 const ProjectItem = ({ project }) => {
+  const ref = useRef();
+  const xyz = "fade small stagger";
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          ref.current.setAttribute('xyz', xyz);
+        }
+      },
+      { threshold: 0.4 }
+    );
+
+    observer.observe(ref.current);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [xyz]);
   return (
-    <section className="project-item ">
-    <div className="project-cart">
-        <img src={project.image} alt={project.title} />
-        <p>{project.description}</p>
+    <XyzTransition appear>
+      <section ref={ref} className="project-item">
+        <div className="project-card">
+          <img src={project.image} alt={project.title} />
+          <p>{project.description}</p>
         </div>
-        
-    </section>
+      </section>
+    </XyzTransition>
   );
 };
 
 export default Projects;
+
 

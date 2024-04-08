@@ -2,6 +2,7 @@ import React from "react";
 import { FaFacebookF, FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { BiLogoUpwork } from "react-icons/bi";
+import 'animate.css';
 
 
 
@@ -10,13 +11,13 @@ const Home = () => {
     
     return (
         <div id="home" className="home">
-            <h1>
+            <h1 className="animate__animated animate__backInLeft ">
                 Hi, i'm<br/> Phayouderson
             </h1>
-            <p>A Full Stack Developer who builds things for the web. 
+            <p className="animate__animated animate__backInRight animate__delay-1s">A Full Stack Developer who builds things for the web. 
             </p>
-            <div className="social-media-main-container">
-                <div className="social-media-container">
+            <div className="social-media-main-container ">
+                <div className="social-media-container animate__animated animate__backInLeft animate__delay-2s">
                     <a href="https://www.facebook.com/fayou.borgella" target="_blank" rel="noopener noreferrer">
                     <FaFacebookF />
 
