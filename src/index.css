@@ -33,25 +33,12 @@ p{
   }
  p {
     font-family: "Space Grotesk Variable", sans-serif;
-    /* -webkit-font-smoothing: antialiased; */
     letter-spacing: -.02em;
-    color: rgb(212, 194, 194) !important;
+    color: rgb(212, 203, 203) !important;
   }
 
 }
-/* button {
-    background-color: rgba(82, 163, 163, 0);
-    border: solid rgb(82, 163, 163);
-    height: 2.5rem; 
-    width: 9.375rem; 
-    margin-top: 0.9375rem; 
-    color: rgb(212, 194, 194);
-    font-size: 1.25rem; 
-    font-weight: bold;
-    margin-left: 1.09375rem; 
-    margin-top: 0.625rem; 
-    border-radius: 4px;
-} */
+
 button {
   z-index: 1;
   border-radius: 4px;

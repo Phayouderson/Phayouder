@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import {BiMenu,} from 'react-icons/bi'
 import {LiaTimesSolid} from 'react-icons/lia'
-import PPhoto from './PPhoto.png';
 import './Navbar.css';
 
 const Navbar = () => {
