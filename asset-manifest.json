@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/Phayouderson/static/css/main.9f280b13.css",
-    "main.js": "/Phayouderson/static/js/main.4a284b2a.js",
-    "static/media/PPhoto.png": "/Phayouderson/static/media/PPhoto.181eb7eadbaa1aac6c2a.png",
+    "main.css": "/Phayouderson/static/css/main.95aff7d5.css",
+    "main.js": "/Phayouderson/static/js/main.9c06c086.js",
     "static/media/Littlelemonphoto.png": "/Phayouderson/static/media/Littlelemonphoto.a903b64efb1e3d7904b7.png",
     "static/media/Pphoto.jpg": "/Phayouderson/static/media/Pphoto.23e7a2ccb26216f7a619.jpg",
     "index.html": "/Phayouderson/index.html",
-    "main.9f280b13.css.map": "/Phayouderson/static/css/main.9f280b13.css.map",
-    "main.4a284b2a.js.map": "/Phayouderson/static/js/main.4a284b2a.js.map"
+    "main.95aff7d5.css.map": "/Phayouderson/static/css/main.95aff7d5.css.map",
+    "main.9c06c086.js.map": "/Phayouderson/static/js/main.9c06c086.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f280b13.css",
-    "static/js/main.4a284b2a.js"
+    "static/css/main.95aff7d5.css",
+    "static/js/main.9c06c086.js"
   ]
 }
