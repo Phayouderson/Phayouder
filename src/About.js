@@ -30,19 +30,20 @@ const About = () => {
         <div className="about-section">
         <h1>About <br/><scan className="textline"></scan></h1>
           <p>
-            I'm a Frontend Web Developer building the Front-end of 
-            Websites and Web Applications that leads to the success 
-            of the overall product. Check out some of my work in the 
-            Projects section.
+            I'm Phayouderson Borgella, a web developer with a passion 
+            for creating engaging user experiences. My expertise spans
+             from front-end technologies like HTML5, CSS3, and JavaScript, 
+             learned through the Meta Front-End Development Certificate, to 
+             full-stack development with Node.js and MongoDB, honed with the 
+             Zero to Mastery course. Committed to lifelong learning, I thrive 
+             on turning complex problems into intuitive solutions. My latest 
+             project, a dynamic e-commerce platform, exemplifies my ability 
+             to enhance online shopping experiences. Interested in collaborating?<a className='aScan' href="#contact">
+             <scan> Let's connect and bring your ideas to life!</scan></a>
           </p>
-          <p>
-            I'm open to Job opportunities where I can contribute, learn,
-             and grow. If you have a good opportunity that matches my skills 
-             and experience then don't hesitate to contact me.
-          </p>
-          <a href="#contact">
+          {/* <a href="#contact">
             <button >Contact</button>
-            </a>
+            </a> */}
         </div>
         <div ref={ref} className="image-container">
         <img src={Pbphoto} alt="Photo Phayouderson" />

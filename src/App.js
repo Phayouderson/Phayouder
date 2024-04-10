@@ -17,7 +17,6 @@ const app = ()=>{
         <Projects/>
         <Form/>
         <Footer/>
-        <CaseStudy/>
       </div>
     </>
   )

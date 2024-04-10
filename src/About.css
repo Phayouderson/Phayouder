@@ -1,7 +1,6 @@
 #about {
   background-color: rgb(5, 5, 30);
   border-bottom: solid 0.1rem #1aecff8f;
-
     margin-top: 35rem;
     padding: 3.125rem 3.125rem;
   }
@@ -10,6 +9,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 2rem;
+
     /* margin-top: 40rem; */
 
 
@@ -30,8 +31,15 @@
   .about-section p{
     margin-top: 10px;
     max-width: 40ch;
-  }
+    padding-bottom: 2rem;
 
+  }
+.aScan {
+  color: rgb(151, 139, 139);
+}
+.aScan:hover{
+  color: purple;
+}
   .image-container img {
     height: 100vh;
     width: auto;
@@ -50,8 +58,10 @@
       flex-direction: column-reverse;
       padding: 0;
       margin: 0;
-      
 
+    }
+    .aScan{
+      color: rgb(212, 203, 203);
     }
     .image-container img{
       width: 100%;

@@ -14,7 +14,7 @@ const Home = () => {
             <h1 className="animate__animated animate__backInLeft ">
                 Hi, i'm<br/> Phayouderson
             </h1>
-            <p className="animate__animated animate__backInRight animate__delay-1s">A Full Stack Developer who builds things for the web. 
+            <p className="animate__animated animate__backInRight animate__delay-1s">A passionate web developer driven by the challenge of <br/>crafting beautiful and functional user experiences. 
             </p>
             <div className="social-media-main-container ">
                 <div className="social-media-container animate__animated animate__backInLeft animate__delay-2s">

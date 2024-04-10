@@ -1,6 +1,7 @@
 import "./Projects.css";
 import Littlelemonphoto from "./Littlelemonphoto.png";
 import React, { useEffect, useRef } from 'react';
+import { Outlet, Link } from "react-router-dom";
 import "@animxyz/core";
 import { XyzTransition} from "@animxyz/react";
 
@@ -83,14 +84,17 @@ const ProjectItem = ({ project }) => {
     };
   }, [xyz]);
   return (
-    <XyzTransition appear>
-      <section ref={ref} className="project-item">
-        <div className="project-card">
-          <img src={project.image} alt={project.title} />
-          <p>{project.description}</p>
-        </div>
-      </section>
-    </XyzTransition>
+      <XyzTransition appear>
+        <Link to="/CaseStudyPage">
+          <section ref={ref} className="project-item">
+            <div className="project-card">
+              <img src={project.image} alt={project.title} />
+              <p>{project.description}</p>
+            </div>
+          </section>
+        </Link>
+
+      </XyzTransition>
   );
 };
 
