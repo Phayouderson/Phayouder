@@ -4,7 +4,7 @@ import Form from "./Form";
 import Navbar from "./Navbar";
 import About from "./About";
 import Projects from "./Projects";
-import CaseStudy from './CaseStudyPage'
+import Skill from "./skill";
 import Home from "./Home";
 
 const app = ()=>{
@@ -14,6 +14,7 @@ const app = ()=>{
         <Navbar/>
         <Home/>
         <About/>
+        <Skill/>
         <Projects/>
         <Form/>
         <Footer/>
