@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Phayouderson/static/css/main.22c0901e.css",
-    "main.js": "/Phayouderson/static/js/main.1ded1b03.js",
+    "main.js": "/Phayouderson/static/js/main.c997b470.js",
     "static/media/Littlelemonphoto.png": "/Phayouderson/static/media/Littlelemonphoto.a903b64efb1e3d7904b7.png",
     "static/media/Pphoto.jpg": "/Phayouderson/static/media/Pphoto.23e7a2ccb26216f7a619.jpg",
     "index.html": "/Phayouderson/index.html",
     "main.22c0901e.css.map": "/Phayouderson/static/css/main.22c0901e.css.map",
-    "main.1ded1b03.js.map": "/Phayouderson/static/js/main.1ded1b03.js.map"
+    "main.c997b470.js.map": "/Phayouderson/static/js/main.c997b470.js.map"
   },
   "entrypoints": [
     "static/css/main.22c0901e.css",
-    "static/js/main.1ded1b03.js"
+    "static/js/main.c997b470.js"
   ]
 }
