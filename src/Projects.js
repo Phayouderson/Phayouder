@@ -1,103 +1,140 @@
-import "./Projects.css";
-import Littlelemonphoto from "./Littlelemonphoto.png";
-import React, { useEffect, useRef } from 'react';
-import { Outlet, Link } from "react-router-dom";
-import "@animxyz/core";
-import { XyzTransition} from "@animxyz/react";
+// import "./Projects.css";
+// import Littlelemonphoto from "./Littlelemonphoto.png";
+// import { Link } from "react-router-dom";
+// import "@animxyz/core";
+// import 'animate.css';
 
+
+
+// const projectsData = [
+//   {
+//     title: "Little Lemon",
+//     description:"I created the Little Lemon website from start to finish, showcasing my passion for web development and design. As the sole developer, I designed an intuitive and visually appealing interface that embodies the essence of Little Lemon's brand.",
+//     image: Littlelemonphoto,
+//     caseStudyLink: "CaseStudyPage",
+//     liveLink: "url",
+//     GitHubRepo: "GitHub Repo",
+//   },
+//   {
+//     title: "Little Lemon",
+//     description:"I created the Little Lemon website from start to finish, showcasing my passion for web development and design. As the sole developer, I designed an intuitive and visually appealing interface that embodies the essence of Little Lemon's brand.",
+//     image: Littlelemonphoto,
+//     caseStudyLink: "CaseStudyPage",
+//     liveLink: "url",
+//     GitHubRepo: "GitHub Repo",
+//   },
+//   {
+//     title: "Little Lemon",
+//     description:"I created the Little Lemon website from start to finish, showcasing my passion for web development and design. As the sole developer, I designed an intuitive and visually appealing interface that embodies the essence of Little Lemon's brand.",
+//     image: Littlelemonphoto,
+//     caseStudyLink: "CaseStudyPage",
+//     liveLink: "url",
+//     GitHubRepo: "GitHub Repo",
+//   },
+//   {
+//     title: "Little Lemon",
+//     description:"I created the Little Lemon website from start to finish, showcasing my passion for web development and design. As the sole developer, I designed an intuitive and visually appealing interface that embodies the essence of Little Lemon's brand.",
+//     image: Littlelemonphoto,
+//     caseStudyLink: "CaseStudyPage",
+//     liveLink: "url",
+//     GitHubRepo: "GitHub Repo",
+//   },
+//   {
+//     title: "Little Lemon",
+//     description:"I created the Little Lemon website from start to finish, showcasing my passion for web development and design. As the sole developer, I designed an intuitive and visually appealing interface that embodies the essence of Little Lemon's brand.",
+//     image: Littlelemonphoto,
+//     caseStudyLink: "CaseStudyPage",
+//     liveLink: "url",
+//     GitHubRepo: "GitHub Repo",
+//   },
+// ];
+// const Projects = () => {
+//   return (
+//     <div id="projects" className="projects-container">
+//       <div className="project">
+//         <h1>Projects <br/><span className="textline"></span></h1>
+//       </div>
+//       <div className="project-grid">
+//         {projectsData.map((project, index) => (
+//           <ProjectItem key={index} project={project} />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// const ProjectItem = ({ project }) => {
+  
+//   return (
+//         <Link to="/CaseStudyPage" style={{ textDecoration: 'none' }}>
+//           <section className="project-item">
+//             <div className="project-card ">
+//               <img src={project.image} alt={project.title} />
+//               <p>{project.description}</p>
+//             </div>
+//           </section>
+//         </Link>
+//   );
+// };
+
+// export default Projects;
+
+
+import React from 'react';
+import useIntersectionObserver from './useIntersectionObserver'; // Import the custom hook
+import Littlelemonphoto from "./Littlelemonphoto.png";
+import { Link } from "react-router-dom";
+import "./Projects.css";
 
 const projectsData = [
   {
     title: "Little Lemon",
-    description:"I created the Little Lemon website from start to finish, showcasing my passion for web development and design. As the sole developer, I designed an intuitive and visually appealing interface that embodies the essence of Little Lemon's brand.",
+    description: "I created the Little Lemon website from start to finish, showcasing my passion for web development and design. As the sole developer, I designed an intuitive and visually appealing interface that embodies the essence of Little Lemon's brand.",
     image: Littlelemonphoto,
     caseStudyLink: "CaseStudyPage",
     liveLink: "url",
     GitHubRepo: "GitHub Repo",
   },
-  {
-    title: "Little Lemon",
-    description:"I created the Little Lemon website from start to finish, showcasing my passion for web development and design. As the sole developer, I designed an intuitive and visually appealing interface that embodies the essence of Little Lemon's brand.",
-    image: Littlelemonphoto,
-    caseStudyLink: "CaseStudyPage",
-    liveLink: "url",
-    GitHubRepo: "GitHub Repo",
-  },
-  {
-    title: "Little Lemon",
-    description:"I created the Little Lemon website from start to finish, showcasing my passion for web development and design. As the sole developer, I designed an intuitive and visually appealing interface that embodies the essence of Little Lemon's brand.",
-    image: Littlelemonphoto,
-    caseStudyLink: "CaseStudyPage",
-    liveLink: "url",
-    GitHubRepo: "GitHub Repo",
-  },
-  {
-    title: "Little Lemon",
-    description:"I created the Little Lemon website from start to finish, showcasing my passion for web development and design. As the sole developer, I designed an intuitive and visually appealing interface that embodies the essence of Little Lemon's brand.",
-    image: Littlelemonphoto,
-    caseStudyLink: "CaseStudyPage",
-    liveLink: "url",
-    GitHubRepo: "GitHub Repo",
-  },
-  {
-    title: "Little Lemon",
-    description:"I created the Little Lemon website from start to finish, showcasing my passion for web development and design. As the sole developer, I designed an intuitive and visually appealing interface that embodies the essence of Little Lemon's brand.",
-    image: Littlelemonphoto,
-    caseStudyLink: "CaseStudyPage",
-    liveLink: "url",
-    GitHubRepo: "GitHub Repo",
-  },
+  // Add other project data here
 ];
+
 const Projects = () => {
+  const handleIntersection = () => {
+    projectsData.forEach((project, index) => {
+      const element = document.getElementById(`project-${index}`); // Assuming project index is unique
+      if (element) {
+        element.classList.add('animate__animated', 'animate__backInLeft');
+      }
+    });
+  };
+
+  const ref = useIntersectionObserver(handleIntersection, { threshold: 0.2 });
+
   return (
-    <div id="projects" className="projects-container">
+    <div id="projects" className="projects-container" ref={ref}>
       <div className="project">
         <h1>Projects <br/><span className="textline"></span></h1>
       </div>
       <div className="project-grid">
         {projectsData.map((project, index) => (
-          <ProjectItem key={index} project={project} />
+          <ProjectItem key={index} project={project} index={index} />
         ))}
       </div>
     </div>
   );
 };
 
-const ProjectItem = ({ project }) => {
-  const ref = useRef();
-  const xyz = "fade small stagger";
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          ref.current.setAttribute('xyz', xyz);
-        }
-      },
-      { threshold: 0.4 }
-    );
-
-    observer.observe(ref.current);
-
-    return () => {
-      observer.disconnect();
-    };
-  }, [xyz]);
+const ProjectItem = ({ project, index }) => {
   return (
-      <XyzTransition appear>
-        <Link to="/CaseStudyPage">
-          <section ref={ref} className="project-item">
-            <div className="project-card">
-              <img src={project.image} alt={project.title} />
-              <p>{project.description}</p>
-            </div>
-          </section>
-        </Link>
-
-      </XyzTransition>
+    <Link to="/CaseStudyPage" style={{ textDecoration: 'none' }}>
+      <section id={`project-${index}`} className="project-item">
+        <div className="project-card">
+          <img src={project.image} alt={project.title} />
+          <p>{project.description}</p>
+        </div>
+      </section>
+    </Link>
   );
 };
 
 export default Projects;
-
-

@@ -1,4 +1,6 @@
 import React from "react";
+import { HashRouter, Route, Routes } from 'react-router-dom';
+
 import Footer from "./Footer";
 import Form from "./Form";
 import Navbar from "./Navbar";
@@ -9,6 +11,7 @@ import Home from "./Home";
 
 const app = ()=>{
   return (
+    
     <>
       <div>
         <Navbar/>

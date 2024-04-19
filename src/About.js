@@ -9,7 +9,7 @@ const About = () => {
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting) {
-          ref.current.classList.add('animate__animated', 'animate__lightSpeedInLeft');
+          ref.current.classList.add('animate__animated', 'animate__backInLeft');
         }
       },
       { threshold: 0.2 }
@@ -27,7 +27,7 @@ const About = () => {
   return (
     <div  id="about">
       <section  className="about-contenair">
-        <div className="about-section">
+        <div className="about-section" ref={ref}>
         <h1>About <br/><scan className="textline"></scan></h1>
           <p>
             I'm Phayouderson Borgella, a web developer with a passion 
@@ -41,11 +41,9 @@ const About = () => {
              to enhance online shopping experiences. Interested in collaborating?<a className='aScan' href="#contact">
              <scan> Let's connect and bring your ideas to life!</scan></a>
           </p>
-          {/* <a href="#contact">
-            <button >Contact</button>
-            </a> */}
+          
         </div>
-        <div ref={ref} className="image-container">
+        <div className="image-container">
         <img src={Pbphoto} alt="Photo Phayouderson" />
         </div>
         

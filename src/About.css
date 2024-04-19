@@ -38,7 +38,7 @@
   color: rgb(151, 139, 139);
 }
 .aScan:hover{
-  color: purple;
+  color:rgba(210,146,255);
 }
   .image-container img {
     height: 100vh;
