@@ -92,7 +92,8 @@ const projectsData = [
     description: "I created the Little Lemon website from start to finish, showcasing my passion for web development and design. As the sole developer, I designed an intuitive and visually appealing interface that embodies the essence of Little Lemon's brand.",
     image: Littlelemonphoto,
     caseStudyLink: "CaseStudyPage",
-    liveLink: "url",
+    liveLink: "https://phayouderson.github.io/final-project/",
+
     GitHubRepo: "GitHub Repo",
   },
   // Add other project data here
@@ -124,16 +125,19 @@ const Projects = () => {
   );
 };
 
-const ProjectItem = ({ project, index }) => {
+const ProjectItem = ({ project, index}) => {
   return (
-    <Link to="/CaseStudyPage" style={{ textDecoration: 'none' }}>
+    // <Link to="/CaseStudyPage" style={{ textDecoration: 'none' }}>
       <section id={`project-${index}`} className="project-item">
         <div className="project-card">
           <img src={project.image} alt={project.title} />
           <p>{project.description}</p>
+          <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
+            <button style={{ marginTop: '1rem' }}>Project Link</button>
+          </a>
         </div>
       </section>
-    </Link>
+    // </Link>
   );
 };
 

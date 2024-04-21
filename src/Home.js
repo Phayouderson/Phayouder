@@ -20,7 +20,6 @@ const Home = () => {
                 <div className="social-media-container animate__animated animate__backInLeft animate__delay-2s">
                     <a href="https://www.facebook.com/fayou.borgella" target="_blank" rel="noopener noreferrer">
                     <FaFacebookF />
-
                     </a>
                     <a href="https://www.linkedin.com/in/phayouderson/" target="_blank" rel="noopener noreferrer">
                     <FaLinkedinIn />

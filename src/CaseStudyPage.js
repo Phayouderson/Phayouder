@@ -4,7 +4,7 @@ import Footer from './Footer'
 import CaseStudy from './CaseStudy'
 const CaseStudyPage = () => {
   return (
-    <>
+    <> 
         <Navbar/>
         <CaseStudy/>
         <Footer/>

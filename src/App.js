@@ -11,8 +11,6 @@ import Home from "./Home";
 
 const app = ()=>{
   return (
-    
-    <>
       <div>
         <Navbar/>
         <Home/>
@@ -22,7 +20,6 @@ const app = ()=>{
         <Form/>
         <Footer/>
       </div>
-    </>
   )
 }
 export default app

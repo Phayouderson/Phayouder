@@ -21,7 +21,6 @@ const Form = () => {
     e.preventDefault();
     const errors = validateForm(formData);
     if (Object.keys(errors).length === 0) {
-      // Form is valid, submit it
       e.target.submit();
     } else {
       setErrors(errors);
