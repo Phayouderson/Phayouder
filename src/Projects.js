@@ -92,7 +92,7 @@ const projectsData = [
     description: "I created the Little Lemon website from start to finish, showcasing my passion for web development and design. As the sole developer, I designed an intuitive and visually appealing interface that embodies the essence of Little Lemon's brand.",
     image: Littlelemonphoto,
     caseStudyLink: "CaseStudyPage",
-    liveLink: "https://phayouderson.github.io/final-project/",
+    liveLink: "https://phayouderson.github.io/finalproject/",
 
     GitHubRepo: "GitHub Repo",
   },

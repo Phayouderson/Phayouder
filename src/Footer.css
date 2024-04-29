@@ -35,11 +35,13 @@ footer {
     border-radius: 50%;
     padding: 0.3rem;
     margin-right: 10px;
+    transition: transform 0.3s ease-in-out;
 
   }
+  
   .social-media-container a:hover{
     background-color:#1aecff ;
-    ;
+    transform: scale(1.5);
   }
   .Copyright {
     display: flex;
