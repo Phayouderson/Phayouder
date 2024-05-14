@@ -30,7 +30,7 @@ const About = () => {
         <div className="about-section" ref={ref}>
         <h1>About <br/><scan className="textline"></scan></h1>
           <p>
-             Phayouderson Borgella, a web developer with a passion 
+            I am Phayouderson Borgella, a web developer with a passion 
             for creating engaging user experiences. My expertise spans
              from front-end technologies like HTML5, CSS3, and JavaScript, 
              learned through the Meta Front-End Development Certificate, to 
